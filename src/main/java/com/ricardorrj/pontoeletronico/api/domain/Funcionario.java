@@ -24,7 +24,7 @@ public class Funcionario implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy=GenerationType.SEQUENCE, generator="genfuncionario_id")
     private Long id;
 
     @Column(nullable = false)
